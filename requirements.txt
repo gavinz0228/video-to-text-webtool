@@ -1,1 +1,4 @@
+torch
 openai-whisper
+uvicorn
+fastapi
