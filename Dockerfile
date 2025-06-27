@@ -4,7 +4,7 @@ RUN mkdir /app
 WORKDIR /app
 COPY *.py /app
 COPY templates /app/templates
-COPY tiktok_downloader /app/tiktok_downloader
+COPY tiktok_downloader/tik-tok-downloader.py /app/tiktok_downloader/tiktok_downloader.py
 COPY requirements.txt /app
 
 RUN pip install --upgrade pip
