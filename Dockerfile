@@ -8,6 +8,7 @@ COPY tiktok_downloader/tik-tok-downloader.py /app/tiktok_downloader/tiktok_downl
 COPY tiktok_downloader/requirements.txt /app/tiktok_downloader/requirements.txt
 COPY requirements.txt /app
 
+RUN apt-get update && apt-get install -y python3.11
 RUN pip install --upgrade pip
 
 RUN pip install -r tiktok_downloader/requirements.txt
